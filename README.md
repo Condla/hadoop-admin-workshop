@@ -24,6 +24,7 @@
   * SFTP client + key in place?
 * Did everyone receive the private key per Email?
 * Everyone got assigned a set of 4 AWS machines? 
+  * https://gist.github.com/Condla/ca7396733451cafa21605da81cf95a5a
 
 ## Introduction into Hadoop
 
@@ -47,8 +48,8 @@
 ## Outlook
 
 * Get into HDP Security (Kerberos + Ranger + Knox)
-* https://hortonworks.com/services/training/certification/hdpca-certification/
+* Get your hands dirty and get your cluster up and running!
+* Maybe, do an additional training 2-3 days training!
+* A Combination of practical work and studying will get to easily certified:
+  * Get certified: https://hortonworks.com/services/training/certification/hdpca-certification/
 
-
-TODO:
-*   Create github gist with all public instance names created
