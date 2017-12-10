@@ -1,0 +1,55 @@
+#!/usr/bin/env ansible-playbook
+---
+- name: create ec2 infrastructure
+  hosts: localhost
+  gather_facts: no
+  vars_files:
+    - ./vars/ec2.yml
+  roles:
+    - hdp-instances
+
+- name: upgrade all yum packages
+  hosts: hdp
+  gather_facts: yes
+  become: yes
+  tasks:
+    - yum: name=* state=latest
+      notify: reboot vm
+
+  handlers:
+    - name: reboot vm
+      shell: shutdown -r +1
+      async: 0
+      poll: 0
+      ignore_errors: true
+      notify: wait for server
+
+    - name: wait for server
+      local_action: wait_for host={{ ansible_ssh_host | default(inventory_hostname) }} port=22 delay=10 search_regex=OpenSSH
+      become: no
+      notify: wait
+
+    - name: wait
+      pause: seconds=30
+
+- name: bootstrap hosts for the hadoop installation and install ambari-agents
+  hosts: hdp
+  gather_facts: yes
+  become: yes
+  vars_files:
+    - ./vars/main.yml
+  roles:
+    - hadoop-bootstrap
+    - hdp-ambari-agent
+
+
+- name: install mysql server
+  hosts: utility
+  gather_facts: yes
+  become: yes
+  vars_files:
+    - ./vars/mysql.yml
+  roles:
+    - hdp-mysql-server
+
+

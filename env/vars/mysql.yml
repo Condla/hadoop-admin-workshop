@@ -1,0 +1,33 @@
+mysql_admin_user: hdp
+mysql_admin_password: hdp_admin
+mysql_55_repo_enabled: 0
+mysql_56_repo_enabled: 1
+mysql_57_repo_enabled: 0
+mysql_80_repo_enabled: 0
+
+databases:
+  - name: ambari
+    user: ambari
+    host_all: yes
+    password: ambari
+    priv: ambari.*:ALL
+  - name: oozie
+    user: oozie
+    host_all: yes
+    password: oozie
+    priv: oozie.*:ALL
+  - name: hive
+    user: hive
+    host_all: yes
+    password: hive
+    priv: hive.*:ALL
+  - name: ranger
+    user: ranger
+    host_all: yes
+    password: ranger
+    priv: ranger.*:ALL
+  - name: rangerkms
+    user: rangerkms
+    host_all: yes
+    password: rangerkms
+    priv: rangerkms.*:ALL

@@ -1,0 +1,5 @@
+roles*
+*.retry
+hiddenvars*
+ssl_certs*
+*.swp
