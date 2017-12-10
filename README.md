@@ -25,7 +25,30 @@
 * Did everyone receive the private key per Email?
 * Everyone got assigned a set of 4 AWS machines? 
 
+## Introduction into Hadoop
+
+* Just a short intro to be sure that everybody is on the same level of knowledge
+
+## Hands On:
+
+* https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.0.0/bk_ambari-installation/content/ch_Getting_Ready.html
+
+* Install Ambari Server
+* Configure all Ambari Agents
+* Setup Ambari Server
+* Install HDP 2.6.3
+
+## Concepts and Components
+
+* High Availability
+* Discussing the components
+* Getting familiar with the concepts
+
+## Outlook
+
+* Get into HDP Security (Kerberos + Ranger + Knox)
+* https://hortonworks.com/services/training/certification/hdpca-certification/
 
 
 TODO:
-* Create github gist with all public instance names created
+*   Create github gist with all public instance names created
