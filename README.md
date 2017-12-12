@@ -5,7 +5,14 @@
 0. 08:30: Prep + Food Ordering
 0. 09:00: Introduction and Expectations
 0. 09:30: Environment Setup:
-0. 10:00 Introduction into Hadoop
+0. 10:00 Introduction into Hadoop + Installation
+0. 12:30: Lunch break
+0. 13:15: Exploring HDFS! (create user, find blocks,...)
+0. 13:45: Distributed Systems: Concepts and Components
+0. 14:00: Benchmarking + Service Checks
+0. 14:30: Secure Cluster
+0. 16:30: Outlook. What to do next?
+0. 17:00: End + Let's have a drink!
 
 ## Prep + Food Ordering
 
@@ -29,15 +36,14 @@
 ## Introduction into Hadoop: Distributed Storage and Processing
 
 * Just a short intro to be sure that everybody is on the same level of knowledge
-* https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.0.0/bk_ambari-installation/content/ch_Getting_Ready.html
-
 * Hands On: Install Ambari Server
+https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.0.0/bk_ambari-installation/content/ch_Getting_Ready.html
 * Hands On: Configure all Ambari Agents
 * Hands On: Setup Ambari Server
 * Hands On: Install HDP 2.6.3 with 1 Master Node and 3 Worker nodes
 
 ## Exploring HDFS
-* Hands On: Create a user directory
+* Hands On: Create a user directory (linux user + HDFS directory structure)
 
 ## Concepts and Components
 
@@ -47,23 +53,24 @@
 * Hands On: Adding a second node to the cluster.
 * Hands On: Make the installed cluster services highly available.
 
-## Benchmarking
+## Service Checks and Benchmarking
 
+* Run service checks, check health of components
 * Discussion: Why Benchmarking?
 * Terasgen - Generate Random Data
 * Terasort - Sort Random Data
 
-## Run Service and Functionality Checks
-
 ## Secure Cluster
 
 * Install Ranger
-* Install Kerberos
+* Setup KDC
+* Kerberize Cluster
 
 ## Outlook
 
 * Get into HDP Security (Kerberos + Ranger + Knox)
 * Get your hands dirty and get your cluster up and running!
 * Maybe, do an additional training 2-3 days training!
-* A Combination of practical work and studying will get to easily certified:
+* Read a book! Hadoop: The Definitive Guide
+* A combination of practical work and studying will get to easily certified:
   * Get certified: https://hortonworks.com/services/training/certification/hdpca-certification/
