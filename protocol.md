@@ -1,4 +1,4 @@
-
+```
 ## on all nodes configure ambari-agents to point to utility
 /etc/ambari-agent/conf/ambari-agent.ini
 
@@ -33,3 +33,4 @@ create a gigabyte
 time hadoop jar /usr/hdp/2.6.3.0000000/hadoop-mapreduce/hadoop-mapreduce-examples-2.7.3.2.5.5.0-157.jar teragen 10000000 /user/stefan/teragen_data
 
 time hadoop jar /usr/hdp/2.5.5.0-157/hadoop-mapreduce/hadoop-mapreduce-examples-2.7.3.2.5.5.0-157.jar terasort /user/stefan/teragen_data /user/stefan/terasort_out
+```
