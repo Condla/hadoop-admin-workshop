@@ -23,6 +23,8 @@
 * Interactive Workshop
 * Gather experiences of participants
 * Gather expectations of participants on whiteboard (?)
+* Community Event: Help me to help you; help each other!
+* Take pictures and share them!
 
 ## Environment Setup
 * Did everyone, who wants to participate in the Hadoop Admin Vienna WhatsApp Group give me their number?
@@ -43,7 +45,9 @@ https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.0.0/bk_ambari-installation/
 * Hands On: Install HDP 2.6.3 with 1 Master Node and 3 Worker nodes
 
 ## Exploring HDFS
-* Hands On: Create a user directory (linux user + HDFS directory structure)
+* Hands On: Create a user directory (Linux user + HDFS directory structure)
+* Hands On: Load any file into HDFS
+* Hands On: Copy Data via Distcp
 
 ## Concepts and Components
 
@@ -53,18 +57,29 @@ https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.0.0/bk_ambari-installation/
 * Hands On: Adding a second node to the cluster.
 * Hands On: Make the installed cluster services highly available.
 
-## Service Checks and Benchmarking
+## Troubleshooting and Service Checks
 
-* Run service checks, check health of components
+* Hands On: Run service checks, check health of components
+* Hands On: Check log files
+* Hands On: Logsearch ?
+
+## Benchmarking
+
 * Discussion: Why Benchmarking?
-* Terasgen - Generate Random Data
-* Terasort - Sort Random Data
+* Hands On: Terasgen - Generate Random Data
+* Hands On: Terasort - Sort Random Data
+
+## Resource Management
+
+* Hands On: YARN applications
+* Hands On: YARN Queues
 
 ## Secure Cluster
 
-* Install Ranger
+* Install Apache Ranger
 * Setup KDC
 * Kerberize Cluster
+* Setup and configure Apache Knox
 
 ## Outlook
 
@@ -74,3 +89,4 @@ https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.0.0/bk_ambari-installation/
 * Read a book! Hadoop: The Definitive Guide
 * A combination of practical work and studying will get to easily certified:
   * Get certified: https://hortonworks.com/services/training/certification/hdpca-certification/
+  * Objectives: https://hortonworks.com/services/training/certification/exam-objectives/#hdpca
