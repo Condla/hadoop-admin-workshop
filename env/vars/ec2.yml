@@ -1,18 +1,18 @@
 image: ami-02ace471 #RHEL7.3
 #image: ami-7abd0209 #CentOS7.3
 vpc_subnet_id: subnet-5b474612
-#utility_instance_type: m4.xlarge 
-utility_instance_type: t2.micro 
-utility_count: 1
+#utility_instance_type: m4.xlarge
+utility_instance_type: m4.xlarge
+utility_count: 15
 #master_instance_type: m4.xlarge
-master_instance_type: t2.micro
-master_count: 0
+master_instance_type: m4.xlarge
+master_count: 15
 #worker_instance_type: m4.xlarge
-worker_instance_type: t2.micro
-worker_count: 0
+worker_instance_type: m3.xlarge
+worker_count: 35
 edge_instance_type: m4.xlarge
 #edge_instance_type: t2.micro
-edge_count: 0
+edge_count: 10
 region: eu-west-1
-key_name: hadoop-workshop-key 
+key_name: hadoop-workshop-key
 security_group: free-hadoop-workshop

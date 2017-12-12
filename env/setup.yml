@@ -10,10 +10,11 @@
 
 - name: upgrade all yum packages
   hosts: hdp
-  gather_facts: yes
+  gather_facts: no
   become: yes
   tasks:
-    - yum: name=* state=latest
+    - name: upgrade packages
+      yum: name=* state=latest
       notify: reboot vm
 
   handlers:
@@ -38,6 +39,10 @@
   become: yes
   vars_files:
     - ./vars/main.yml
+
+  pre_tasks:
+    - name: deploy hosts file
+      copy: src=files/hosts dest=/etc/hosts
   roles:
     - hadoop-bootstrap
     - hdp-ambari-agent
@@ -51,5 +56,3 @@
     - ./vars/mysql.yml
   roles:
     - hdp-mysql-server
-
-

@@ -23,27 +23,42 @@
   * SSH client + key in place?
   * SFTP client + key in place?
 * Did everyone receive the private key per Email?
-* Everyone got assigned a set of 4 AWS machines? 
+* Everyone got assigned a set of 4 AWS machines?
   * https://gist.github.com/Condla/ca7396733451cafa21605da81cf95a5a
 
-## Introduction into Hadoop
+## Introduction into Hadoop: Distributed Storage and Processing
 
 * Just a short intro to be sure that everybody is on the same level of knowledge
-
-## Hands On:
-
 * https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.0.0/bk_ambari-installation/content/ch_Getting_Ready.html
 
-* Install Ambari Server
-* Configure all Ambari Agents
-* Setup Ambari Server
-* Install HDP 2.6.3
+* Hands On: Install Ambari Server
+* Hands On: Configure all Ambari Agents
+* Hands On: Setup Ambari Server
+* Hands On: Install HDP 2.6.3 with 1 Master Node and 3 Worker nodes
+
+## Exploring HDFS
+* Hands On: Create a user directory
 
 ## Concepts and Components
 
-* High Availability
-* Discussing the components
-* Getting familiar with the concepts
+* Discuss the services and components!
+* Get familiar with the concepts: High Availabilty + Scalability (Master/Slave Architecture)
+* Check out block of file in HDFS
+* Hands On: Adding a second node to the cluster.
+* Hands On: Make the installed cluster services highly available.
+
+## Benchmarking
+
+* Discussion: Why Benchmarking?
+* Terasgen - Generate Random Data
+* Terasort - Sort Random Data
+
+## Run Service and Functionality Checks
+
+## Secure Cluster
+
+* Install Ranger
+* Install Kerberos
 
 ## Outlook
 
@@ -52,4 +67,3 @@
 * Maybe, do an additional training 2-3 days training!
 * A Combination of practical work and studying will get to easily certified:
   * Get certified: https://hortonworks.com/services/training/certification/hdpca-certification/
-
